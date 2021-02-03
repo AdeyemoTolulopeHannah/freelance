@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+.body{
+    background-blend-mode: multiply;
+}
+.main{
+    background: url(/images/pexels-rebrand-cities-1367276.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.logo{
+    background: crimson;
+    margin-left: 60px;
+    padding: 10px;
+ cursor: pointer;
+}
+.logo h1{
+    margin-top: 30px;
+    color: #fff;
+    text-transform: capitalize;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+.navbar li{
+    list-style: none;
+    padding: 10px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.navbar li a:hover{
+    background: crimson;
+    padding: 10px;
+    border-radius: 200px;
+}
+.navbar i{
+    padding: 10px;
+    color: crimson;
+    font-size: 2em;
+}
+.toggle{
+position: absolute;
+top: .75rem;
+right: 1rem;
+display: none;
+flex-direction: column;
+justify-content: space-between;
+width: 30px;
+height: 21px;
+cursor: pointer;
+}
+.bar{
+    width: 100%;
+    background: rgb(12, 12, 12);
+    height: 3px;
+}
+
+.content{
+  margin-top: 100px;
+    margin-left: 150px;
+    color: rgb(36, 17, 17);
+}
+.content h1{
+    font-size: 3.5em;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+.content p{
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color:rgb(22, 22, 22);
+}
+.content a{
+    padding: 10px;
+    background: crimson;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+.benefit{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 40px;
+}
+.container{
+    width: 33%;
+}
+.container h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.container p{
+    margin-bottom: 15px;
+    width: 70%;
+}
+.container details{
+ display: block;
+ border: none;
+}
+.container summary{
+    list-style: none;
+    color: red;
+    font-weight: 800;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+#PORTFOLIO{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+.pimage{
+    margin-left: 170px;
+}
+.ptext{
+    width: 500px;
+}
+.ptext h3{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2em;
+    margin: 10px;
+}
+.ptext h6{
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+.ptext p{
+    margin: 15px;
+}
+ summary{
+    color: crimson;
+    font-weight: 800;
+    font-size: 1.2em;
+    margin: 10px;
+}
+.team{
+    margin: 20px 30px 10px 60px;
+}
+.teamtext{
+    margin: 20px;
+}
+.teamtext h1{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.team1 img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin-right:35px
+}
+.teamimg{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 20px;
+}
+.team1{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px;
+}
+.text1 h2{
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.team1 h4{
+    color: crimson;
+    text-transform: capitalize;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.team summary{
+    text-align: right;
+}
+.footer{
+    margin-top: 30px;
+    border-top: 1px solid rgba(197, 193, 193, 0.74);
+    padding: 20px;
+}
+.footer h4{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1em;
+}
+@media screen and (max-width:1024px){
+   .logo{
+    margin-left: 5px;
+    padding: 3px;
+    width: 40%;
+   } 
+   .logo h1{
+    margin-top: 10px;
+    padding: 10px;
+
+   }
+   .content{
+    margin-top: 200px;
+      
+  }
+   .toggle{
+       display: flex;
+   }
+   .nav{
+       flex-direction: column;
+       align-content: center;
+       text-align: center;
+   }
+
+    
+    
+    .navbar{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .navbar a:hover{
+        width: 100%
+    }
+    .benefit{
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+    }
+    .container h2{
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .container p{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .content{
+         margin-left: 30px;
+      }
+      #PORTFOLIO{
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .pimage{
+       margin-bottom: 15px;
+    }
+    .ptext{
+        width: 100%;
+        margin: 10px;
+    }
+    .ptext h3{
+        text-align: center;
+    }
+    .ptext h6{
+        text-align: center;
+    }
+    .team{
+        margin: 40px 30px 10px 60px;
+    }
+    
+    .teamimg{
+        /* flex-direction: column;*/
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    .team1{
+        display: flex;
+    }
+    .team summary{
+        text-align: none;
+    }
+
+    }
+    @media screen and (max-width:480px){
+        .logo{
+            
+            width: 50%;
+           } 
+        .content h1{
+            font-size: 2.5em;
+        }
+        .pimage{
+            margin-left: 50px;
+        }
+    }
